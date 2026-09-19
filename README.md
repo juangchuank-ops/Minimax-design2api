@@ -23,6 +23,15 @@
 > 本机 `8080` 已被隔壁 `minimax2api` 占着，所以这里配的是 `127.0.0.1:18080`。
 > 换端口改 `config.json` 或用 `-listen :9000`。
 
+克隆下来没有 `config.json`（里面有令牌，不入库），先复制模板再改：
+
+```bash
+cp config.example.json config.json   # Windows: copy config.example.json config.json
+```
+
+令牌可以从本机客户端导入（`-import-token`），也可以自己粘进去；
+字段含义见下面「配置」一节。查账号积分用 `python tools/check_credit.py`。
+
 ```bash
 curl http://127.0.0.1:8080/v1/chat/completions \
   -H 'content-type: application/json' \
