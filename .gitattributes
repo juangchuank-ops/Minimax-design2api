@@ -1,0 +1,20 @@
+# Normalize line endings: the repo is developed on Windows and built/run on
+# both Windows and Linux, so mixed CRLF would break the shell scripts and
+# pollute diffs.
+* text=auto eol=lf
+
+# Shell scripts must stay LF even on a Windows checkout.
+*.sh text eol=lf
+
+# Go and web sources are plain text too (the catch-all above already covers
+# them; these are documentation of intent rather than behaviour).
+
+# Windows-only files keep CRLF.
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# Nothing below is text; never let git touch or diff these.
+*.png binary
+*.mp3 binary
+*.mp4 binary
+*.exe binary

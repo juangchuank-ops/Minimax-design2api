@@ -1,0 +1,19 @@
+{
+  "listen": "127.0.0.1:18080",
+  "gateway": "https://design.minimax.io",
+  "upstream": "https://hub.minimax.io",
+  "video_base": "",
+  "version_code": "3.0.16",
+  "app_id": "3001",
+  "device_platform": "desktop",
+  "request_timeout_sec": 600,
+  "default_model": "MiniMax-M3",
+  "api_keys": [],
+  "tokens": [
+    {
+      "name": "optional-display-name",
+      "region": "overseas",
+      "token": "eyJhbGciOi.... paste the MiniMax Design access token here"
+    }
+  ]
+}

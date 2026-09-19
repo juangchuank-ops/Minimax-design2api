@@ -1,0 +1,23 @@
+# credentials — never commit
+config.json
+config.json.tmp
+
+# reverse-engineering scratch space (extracted app.asar is ~48 MB and the
+# decrypted provider config can carry account identifiers)
+recon/
+*.log
+
+# assistant workspace state (notes, memory) — not project source
+.workbuddy/
+.workbuddy-ai/
+
+# build output
+minimax-design2api.exe
+minimax-design2api
+dist/
+*.exe~
+*.test
+
+# os noise
+.DS_Store
+Thumbs.db
